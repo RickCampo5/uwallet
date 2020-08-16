@@ -1,0 +1,29 @@
+{
+  "name": "uwallet-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REST API for web app and mobile app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickCampo5/uwallet.git"
+  },
+  "author": "Ricardo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RickCampo5/uwallet/issues"
+  },
+  "homepage": "https://github.com/RickCampo5/uwallet#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  }
+}
