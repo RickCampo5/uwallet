@@ -3,8 +3,12 @@ const debug = require('debug')('uwallet:api:routes')
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req,res) => {
-    res.send('connected')
+router.get('/cards', (req,res, next) => {
+    res.json({
+        message: 'Secure Route',
+        user: req.user, 
+        token: req.query.secret_token
+    })
 })
 
 router.get('/:id', (req,res) => {
