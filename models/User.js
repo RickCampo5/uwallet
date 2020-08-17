@@ -22,9 +22,10 @@ const UserSchema = new Schema({
   creditCards: [
     {
       type: Schema.Types.ObjectId,
-      ref: 'CreditCards'
+      ref: 'CreditCard'
     }
   ],
+  cash: Number,
   expenses: Number,
   income: Number
 },{

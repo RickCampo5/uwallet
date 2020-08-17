@@ -37,9 +37,11 @@ app.use(cookieParser())
 //Routes
 const auth = require('./routes/auth')
 const users = require('./routes/users')
+const creditCards = require('./routes/creditCards')
 
 app.use('/auth', auth)
 app.use('/users', passport.authenticate('jwt', { session : false }), users)
+app.use('/creditCards', passport.authenticate('jwt', { session : false }), creditCards)
 
 //Error Handler
 app.use((error, req, res, next) => {
