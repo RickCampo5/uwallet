@@ -5,6 +5,11 @@ const ExpensesSchema = new Schema({
   name: String,
   amount: Number,
   expenseType: String,
+  date: Date,
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User'
+  },
   card: {
     type: Schema.Types.ObjectId,
     refPath: 'onModel'
@@ -12,7 +17,7 @@ const ExpensesSchema = new Schema({
   onModel: {
     type: String,
     enum: ['CreditCard', 'DebitCard']
-  }
+  },
 },{
   timestamps: {
     createdAt: 'created_at',
